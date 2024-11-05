@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/rpchan44/k8s-demo-app.git
     targetRevision: HEAD
-    path: bases
+    path: dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: trunk
