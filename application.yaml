@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: project-MachX
+  name: project-machx
   namespace: argocd
 spec:
   project: default
