@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application
+  name: Project-MachX
   namespace: argocd
 spec:
   project: default
@@ -9,10 +9,10 @@ spec:
   source:
     repoURL: https://github.com/rpchan44/k8s-demo-app.git
     targetRevision: HEAD
-    path: dev
+    path: bases
   destination: 
     server: https://kubernetes.default.svc
-    namespace: development
+    namespace: trunk
 
   syncPolicy:
     syncOptions:
